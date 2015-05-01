@@ -11,5 +11,16 @@
                 <class>Ddg_Transutm_Helper</class>
             </ddg_trans>
         </helpers>
+        <models>
+            <ddg_transutm>
+                <class>Ddg_Transutm_Model_Model</class>
+            </ddg_transutm>
+            <core>
+                <rewrite>
+                    <email_template_filter>Ddg_Transutm_Model_Email_Template_Filter</email_template_filter>
+                </rewrite>
+            </core>
+        </models>
+
     </global>
 </config>
