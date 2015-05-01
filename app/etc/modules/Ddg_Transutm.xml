@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ddg_Transutm>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Ddg_Transutm>
+    </modules>
+</config>

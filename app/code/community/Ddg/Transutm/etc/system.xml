@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <connector translate="label" module="ddg_trans">
+            <label>DOTMAILER</label>
+            <sort_order>2000</sort_order>
+        </connector>
+    </tabs>
+    <sections>
+        <connector_transactional_emails translate="label" module="ddg_trans">
+            <label>Transactional Emails</label>
+            <tab>connector</tab>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <sort_order>9000</sort_order>
+            <groups>
+                <utm translate="label" module="ddg_trans">
+                    <label>UTM Section</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <utm_source translate="label comment" module="ddg_trans">
+                            <label>UTM source</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Set the default UTM source for email templates.]]></comment>
+                        </utm_source>
+                        <utm_medium translate="label comment" module="ddg_trans">
+                            <label>UTM medium</label>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Set the default UTM medium for email templates.]]></comment>
+                        </utm_medium>
+                        <utm_campaign translate="lable comment" module="ddg_trans">
+                            <label>UTM campaign</label>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Set the default UTM campaign for email templates.]]></comment>
+                        </utm_campaign>
+                    </fields>
+                </utm>
+            </groups>
+        </connector_transactional_emails>
+    </sections>
+</config>

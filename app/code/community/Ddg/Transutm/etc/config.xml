@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ddg_Transutm>
+            <version>0.0.1</version>
+        </Ddg_Transutm>
+    </modules>
+    <global>
+        <helpers>
+            <ddg_trans>
+                <class>Ddg_Transutm_Helper</class>
+            </ddg_trans>
+        </helpers>
+    </global>
+</config>
