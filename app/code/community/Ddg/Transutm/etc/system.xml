@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <tabs>
-        <connector translate="label" module="ddg_trans">
-            <label>DOTMAILER</label>
+        <utm translate="label" module="ddg_trans">
+            <label>Transactional Emails UTM</label>
             <sort_order>2000</sort_order>
-        </connector>
+        </utm>
     </tabs>
     <sections>
-        <connector_transactional_emails translate="label" module="ddg_trans">
+        <design translate="label" module="ddg_trans">
             <label>Transactional Emails</label>
-            <tab>connector</tab>
+            <tab>design</tab>
             <frontend_type>text</frontend_type>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
-            <sort_order>9000</sort_order>
+            <sort_order>30</sort_order>
             <groups>
-                <utm translate="label" module="ddg_trans">
-                    <label>UTM Section</label>
+                <email translate="label" module="ddg_trans">
+                    <label>Transactional Emails</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>10</sort_order>
+                    <sort_order>510</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <expanded>1</expanded>
                     <fields>
+                        <email_header translate="label" module="ddg_trans">
+                            <label>UTM</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </email_header>
                         <utm_source translate="label comment" module="ddg_trans">
                             <label>UTM source</label>
-                            <sort_order>20</sort_order>
+                            <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -35,7 +43,7 @@
                         </utm_source>
                         <utm_medium translate="label comment" module="ddg_trans">
                             <label>UTM medium</label>
-                            <sort_order>30</sort_order>
+                            <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -43,15 +51,15 @@
                         </utm_medium>
                         <utm_campaign translate="lable comment" module="ddg_trans">
                             <label>UTM campaign</label>
-                            <sort_order>40</sort_order>
+                            <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <comment><![CDATA[Set the default UTM campaign for email templates.]]></comment>
                         </utm_campaign>
                     </fields>
-                </utm>
+                </email>>
             </groups>
-        </connector_transactional_emails>
+        </design>
     </sections>
 </config>
