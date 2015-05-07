@@ -65,6 +65,16 @@ class Ddg_Transutm_Model_Email_Template_Filter extends Mage_Core_Model_Email_Tem
 	 */
 	private function setUtmData()
 	{
+		$source = Mage::getStoreConfig(Ddg_Transutm_Helper_Data::XML_CONFIG_UTM_SOURCE);
+		$medium = Mage::getStoreConfig( Ddg_Transutm_Helper_Data::XML_CONFIG_UTM_MEDIUM );
+		$campaign = Mage::getStoreConfig(Ddg_Transutm_Helper_Data::XML_CONFIG_UTM_CAMPAIGN);
+
+		Mage::log($source);
+		Mage::log($medium);
+		Mage::log($campaign);
+
+
+
 		$data= $this->getIncludeProcessor();
 		$template = $data[0];
 		$utmSource = $template->getUtmSource();
