@@ -2,10 +2,21 @@
 <config>
     <modules>
         <Ddg_Transutm>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
         </Ddg_Transutm>
     </modules>
     <global>
+        <blocks>
+            <ddg_trans>
+                <class>Dotdigitalgroup_Email_Block</class>
+            </ddg_trans>
+            <adminhtml>
+                <rewrite>
+                    <system_email_template_edit>Ddg_Transutm_Block_System_Email_Template_Edit</system_email_template_edit>
+                    <system_email_template_edit_form>Ddg_Transutm_Block_System_Email_Template_Edit_Form</system_email_template_edit_form>
+                </rewrite>
+            </adminhtml>
+        </blocks>
         <helpers>
             <ddg_trans>
                 <class>Ddg_Transutm_Helper</class>
@@ -21,6 +32,13 @@
                 </rewrite>
             </core>
         </models>
-
+        <resources>
+            <ddg_trans_setup>
+                <setup>
+                    <module>Ddg_Transutm</module>
+                    <class>Ddg_Transutm_Model_Resource_Setup</class>
+                </setup>
+            </ddg_trans_setup>
+        </resources>
     </global>
 </config>

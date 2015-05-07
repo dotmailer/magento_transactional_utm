@@ -1,2 +1,3 @@
-app/code/community/Ddg/Transutm  app/code/community/Ddg/Transutm
-app/etc/modules/Ddg_Transutm.xml     app/etc/modules/Ddg_Transutm.xml
+app/code/community/Ddg/Transutm/                                 app/code/community/Ddg/Transutm
+app/design/adminhtml/default/default/template/transactional/     app/design/adminhtml/default/default/template/transactional
+app/etc/modules/Ddg_Transutm.xml                                 app/etc/modules/Ddg_Transutm.xml
