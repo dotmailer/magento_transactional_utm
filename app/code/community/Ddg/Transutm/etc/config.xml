@@ -5,6 +5,17 @@
             <version>0.0.2</version>
         </Ddg_Transutm>
     </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Ddg_Transutm before="Mage_Adminhtml">Ddg_Transutm_Adminhtml</Ddg_Transutm>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
     <global>
         <blocks>
             <ddg_trans>
